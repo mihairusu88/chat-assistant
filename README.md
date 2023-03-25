@@ -2,6 +2,8 @@
 
 Simple tool built with Vue 3 that uses the Open AI [chat completion API](https://platform.openai.com/docs/guides/completion) to create a chat assistant.
 
+<img src="https://github.com/mihairusu88/chat-assistant/blob/master/screenshot.png" alt="chat-assistant" width="600">
+
 ## How to use
 ```
 yarn install
@@ -38,6 +40,6 @@ See [Configuration Reference](https://vitejs.dev/config/).
 
 ### Check live demo on netlify
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/672ed666-3daa-403d-b328-bffbf9ddbce4/deploy-status?branch=master)](https://app.netlify.com/sites/vue-customize-me/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a7cc4ef0-82e7-4020-982a-1df52dc79eeb/deploy-status?branch=master)](https://app.netlify.com/sites/chat-assistant/deploys)
 
-[Live Demo](https://vue-customize-me.netlify.app/)
+[Live Demo](https://chat-assistant.netlify.app/)

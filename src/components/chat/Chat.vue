@@ -68,7 +68,7 @@ export default {
         isLoading.value = true;
 
         const response = await fetch(
-          import.meta.env.VITE_OPENAI_API_URL,
+          'https://api.openai.com/v1/completions',
           options
         );
         const data = await response.json();
