@@ -1,0 +1,8 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./theme/index";
+
+body {
+    background: var( --color--gray-lighter );
+}

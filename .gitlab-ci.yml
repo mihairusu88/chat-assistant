@@ -1,0 +1,20 @@
+image: node:latest
+pages:
+  stage: deploy
+  cache:
+    key:
+      files:
+        - package-lock.json
+      prefix: yarn
+    paths:
+      - node_modules/
+  script:
+    - rm -rf node_modules package-lock.json
+    - yarn install
+    - yarn build
+    - cp -a dist/. public/
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

@@ -1,0 +1,30 @@
+@import "../mixins/index";
+
+$primary: #019EBF;
+$success: #48C78E;
+$info: #485FC7;
+$warning: #FFE08A;
+$danger: #F14668;
+$dark: #000000;
+$light: #FFFFFF;
+
+$default-colors: (
+    --color--primary: $primary,
+    --color--success: $success,
+    --color--info: $info,
+    --color--warning: $warning,
+    --color--danger: $danger,
+    --color--dark: $dark,
+    --color--light: $light,
+    --color--gray-darker: lighten( $dark, 13.5% ),
+    --color--gray-dark: lighten( $dark, 20% ),
+    --color--gray: lighten( $dark, 33.5% ),
+    --color--gray-light: lighten( $dark, 46.7% ),
+    --color--gray-lighter: lighten( $dark, 93.5% ),
+);
+
+$easing: ease-in-out;
+
+:root {
+    @include set-colors($default-colors);
+}
